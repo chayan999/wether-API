@@ -30,6 +30,7 @@ body {
 
 .date-container {
     font-weight: 100;
+
 }
 
 .date-container .time {
@@ -37,14 +38,10 @@ body {
     font-size: 70px;
 }
 
-.time-date .am-pm {
+#am-pm {
     font-size: 30px;
-    margin-left: 20px;
-}
-
-.date-container .am-pm {
-    font-size: 30px;
-    margin-left: 20px;
+    margin-left: 233px;
+    margin-top: -50px;
 }
 
 .date-container .date {
