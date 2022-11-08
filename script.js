@@ -8,7 +8,8 @@ const crreuntTempEl = document.getElementById('crreunt-temp')
 const weatherForecastEl = document.getElementById('weather-forecast')
 
 // set local time
-
+const months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+const days = ['Sunday', 'Monday', 'Tuseday', 'Wednesday', 'Thursday', 'Friday', 'Satureday']
 function upDateClock() {
     const hour = new Date().getHours();
     const minute = new Date().getMinutes();
@@ -25,9 +26,14 @@ function upDateClock() {
         ampm = "PM"
     };
 
+
+
     timeEl.innerHTML = h + ":" + m + ':' + s;
     ampmEl.innerHTML = ampm;
-
+    let day = days[new Date().getDay()]
+    let date = new Date().getDate()
+    let month = months[new Date().getMonth()];
+    dateEl.innerHTML = day + ", " + date + " " + month
 
 }
 
